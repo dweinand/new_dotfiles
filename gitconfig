@@ -1,0 +1,32 @@
+[user]
+	name = Dan Weinand
+	email = dweinand@gmail.com
+[alias]
+	co = checkout
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	st = status -s
+	ci = commit
+	co = checkout
+	br = branch
+	put = push origin HEAD
+[core]
+	excludesfile = /Users/dweinand/.gitignore
+	editor = vim
+	autocrlf = input
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
+[branch]
+	autosetuprebase = always
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[mergetool]
+	keepBackup = false

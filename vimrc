@@ -61,7 +61,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "honza/snipmate-snippets"
 Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'bbommarito/vim-slim'
+Bundle 'slim-template/vim-slim'
 Bundle "garbas/vim-snipmate"
 
 " vim-scripts repos

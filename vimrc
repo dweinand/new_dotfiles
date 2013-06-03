@@ -16,7 +16,7 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
-set number
+set relativenumber
 
 set clipboard=unnamed
 
@@ -63,6 +63,7 @@ Bundle "honza/snipmate-snippets"
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'slim-template/vim-slim'
 Bundle "garbas/vim-snipmate"
+Bundle "jeffkreeftmeijer/vim-numbertoggle"
 
 " vim-scripts repos
 Bundle 'L9'

@@ -64,11 +64,11 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'slim-template/vim-slim'
 Bundle "garbas/vim-snipmate"
 Bundle "jeffkreeftmeijer/vim-numbertoggle"
+Bundle 'othree/html5.vim'
 
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'html5.vim'
 
 filetype plugin indent on
 

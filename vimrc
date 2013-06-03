@@ -65,6 +65,7 @@ Bundle 'slim-template/vim-slim'
 Bundle "garbas/vim-snipmate"
 Bundle "jeffkreeftmeijer/vim-numbertoggle"
 Bundle 'othree/html5.vim'
+Bundle 'nelstrom/vim-visual-star-search'
 
 " vim-scripts repos
 Bundle 'L9'

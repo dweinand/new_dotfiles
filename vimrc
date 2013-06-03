@@ -68,6 +68,7 @@ Bundle "jeffkreeftmeijer/vim-numbertoggle"
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'html5.vim'
 
 filetype plugin indent on
 

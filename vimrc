@@ -76,6 +76,7 @@ Bundle "jeffkreeftmeijer/vim-numbertoggle"
 Bundle 'othree/html5.vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'mileszs/ack.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " vim-scripts repos
 Bundle 'L9'

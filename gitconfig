@@ -32,3 +32,5 @@
 	keepBackup = false
 [credential]
 	helper = osxkeychain
+[push]
+	default = simple

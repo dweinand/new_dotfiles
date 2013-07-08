@@ -30,6 +30,12 @@
 				"args": {
 					"dir_limit_depth": 3
 				}
+			},
+			{
+				"name": "branch",
+        "args": {
+          "status_colors": true
+        }
 			}
 		],
 		"right": [
@@ -37,12 +43,6 @@
 				"module": "powerline.segments.shell",
 				"name": "last_pipe_status"
 			},
-			{
-				"name": "branch"
-			},
-      {
-        "name": "date"
-      },
       {
         "name": "date",
         "args": {

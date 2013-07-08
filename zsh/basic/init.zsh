@@ -1,6 +1,8 @@
 export EDITOR='vim'
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/share/python:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
+
+export PYTHON_SITE_PACKAGES=/usr/local/homebrew/lib/python2.7/site-packages
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000

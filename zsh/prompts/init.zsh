@@ -1,1 +1,1 @@
-. $DOTFILES/zsh/prompts/deedub.zsh
+. $DOTFILES/zsh/prompts/powerline.zsh

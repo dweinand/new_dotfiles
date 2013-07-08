@@ -115,3 +115,19 @@ endfunction
 
 map <silent> <Leader>he :call HtmlEscape()<CR>
 map <silent> <Leader>hu :call HtmlUnEscape()<CR>
+
+" use powerline
+let powerlinePath = $PYTHON_SITE_PACKAGES . '/powerline/bindings/vim'
+execute 'set rtp+=' . powerlinePath 
+
+set laststatus=2 " Always display the statusline in all windows
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif

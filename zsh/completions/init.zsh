@@ -1,7 +1,7 @@
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 
-fpath=(/usr/local/homebrew/share/zsh-completions $fpath)
+if ((${+BREW_PREFIX})); then fpath=($BREW_PREFIX/share/zsh-completions $fpath) fi
 fpath=($DOTFILES/zsh/completions $fpath)
 
 autoload -U compinit

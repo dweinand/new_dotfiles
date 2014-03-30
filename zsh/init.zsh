@@ -6,6 +6,7 @@ dotmods=(
   ruby
   python
   node
+  go
   prompts
   rails
   postgres

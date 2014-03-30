@@ -1,3 +1,3 @@
 if which brew > /dev/null; then
-  export PATH="$BREW_PREFIX/share/npm/bin:$PATH"
+  export PATH=$PATH:$BREW_PREFIX/share/npm/bin
 fi

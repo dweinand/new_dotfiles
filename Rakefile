@@ -11,6 +11,8 @@ task :install do
     if subdir?(file)
       `mkdir -p ~/.#{file}`
       Dir["#{file}/*"].each do |f|
+        puts "checking #{f}"
+        next if exists?(f)
         puts "linking ~/.#{f}"
         File.symlink File.join(Dir.pwd, f), dotpath(f)
       end

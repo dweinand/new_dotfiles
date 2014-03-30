@@ -5,6 +5,7 @@ dotmods=(
   vim
   ruby
   python
+  node
   prompts
   rails
   postgres

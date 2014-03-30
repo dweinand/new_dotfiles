@@ -77,6 +77,9 @@ Bundle 'othree/html5.vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'mileszs/ack.vim'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'itchyny/lightline.vim'
+Bundle 'edkolev/promptline.vim'
+Bundle 'edkolev/tmuxline.vim'
 
 " vim-scripts repos
 Bundle 'L9'
@@ -116,9 +119,23 @@ endfunction
 map <silent> <Leader>he :call HtmlEscape()<CR>
 map <silent> <Leader>hu :call HtmlUnEscape()<CR>
 
-" use powerline
-let powerlinePath = $PYTHON_SITE_PACKAGES . '/powerline/bindings/vim'
-execute 'set rtp+=' . powerlinePath 
+" set lightline theme
+let g:lightline = {
+      \ 'colorscheme': 'deedub',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
+
+let g:promptline_preset = {
+      \ 'a'    : [ promptline#slices#user(), promptline#slices#host() ],
+      \ 'b'    : [ promptline#slices#cwd() ],
+      \ 'c'    : [ '${vcs_info_msg_0_}' ],
+      \ 'warn' : [ promptline#slices#last_exit_code() ],
+      \ 'y'    : [ '%T' ]
+      \ }
 
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)

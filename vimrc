@@ -1,5 +1,4 @@
 set nocompatible
-filetype off
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -50,6 +49,8 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+filetype off
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -87,11 +88,6 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 
 filetype plugin indent on
-
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 "This allows for change paste motion cp{motion}
 nmap <silent> cp :set opfunc=ChangePaste<CR>g@

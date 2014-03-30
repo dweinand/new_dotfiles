@@ -80,6 +80,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'itchyny/lightline.vim'
 Bundle 'edkolev/promptline.vim'
 Bundle 'edkolev/tmuxline.vim'
+Bundle 'Blackrush/vim-gocode'
 
 " vim-scripts repos
 Bundle 'L9'

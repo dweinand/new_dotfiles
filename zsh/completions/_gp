@@ -1,0 +1,4 @@
+#compdef gp
+
+_path_files -W $GOPROJECTSPATH -/
+

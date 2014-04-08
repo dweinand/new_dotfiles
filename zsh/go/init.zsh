@@ -1,9 +1,9 @@
 export GOPATH=$PROJECTS_PATH/go
 export PATH=$PATH:$GOPATH/bin
-export GOPROJECTSPATH=$GOPATH/src/github.com/$USER
+export GO_PROJECTS_PATH=$GOPATH/src/github.com/$USER
 
 gp() {
-	cd $GOPROJECTSPATH/$1;
+	cd $GO_PROJECTS_PATH/$1;
 }
 
 
